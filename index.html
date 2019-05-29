@@ -3,9 +3,9 @@
   <head>
     <meta charset="utf-8">
 
-    <title>o – a circular constructed language</title>
+    <title>o</title>
     <meta name="author" content="Martin Maga">
-    <meta name="description" content="… abstract comming soon …">
+    <meta name="description" content="a constructed circular language">
 
     <link rel="stylesheet" href="css/typography.css">
     <link rel="stylesheet" href="css/layout.css">
@@ -71,7 +71,10 @@
         <a href="https://en.wikipedia.org/wiki/Arbelos" target="_blank">Arbelos</a>
         and join the <a href="https://en.wikipedia.org/wiki/Pappus_chain" target="_blank">Pappus chain</a> using
         <a href="https://en.wikipedia.org/wiki/Inversive_geometry" target="_blank">circle inversion</a>.
-        Each generation is contracted and mirrored on the Y-axis.
+        If the cell is alive, then it enqueues itself into
+        <a href="http://mathworld.wolfram.com/PappusChain.html" target="_blank">the first Pappus chain</a>.
+        If the cell is not alive, then it enqueues itself into the second Pappus chain.
+        Each generation is contracted and then mirrored on the Y-axis.
         o is Turing complete because it can run rule 110.
         Since o is Turing complete it is a
         <a href="https://en.wikipedia.org/wiki/Recursively_enumerable_language" target="_blank">type-0 language</a>
@@ -91,31 +94,22 @@
           of the Turing completeness of
           <a href="https://en.wikipedia.org/wiki/Constructed_language" target="_blank">rule 110</a>, a 1-dimensional cellular automaton similar to the
           <a href="https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life" target="_blank">Game of Life by John Horton Conway (1970)</a>.
-          The conventional 2-dimensional representation of the evolution of a cellular automaton that is as powerful as a
+          The conventional 2-dimensional representation of the evolution of a 1-dimensional cellular automaton that is as powerful as a
           <a href="https://en.wikipedia.org/wiki/Universal_Turing_machine" target="_blank">universal Turing machine</a>
           takes up an infinite amount of space.
         </p>
 
         <p>
           I came up with the idea to curl up infinity onto a circle and reduce the state and color complexity of the cellular automaton to an absolute minimum viz a
-          <a href="http://mathworld.wolfram.com/CellularAutomaton.html" target="_blank">1-color, 1-dimensional cellular automaton</a>.
+          <a href="http://mathworld.wolfram.com/CellularAutomaton.html" target="_blank">1-color, 2-state, 1-dimensional cellular automaton</a>.
           The result of this minimalism is a language that consists only of a single symbol—one circle—and its
           <a href="https://en.wikipedia.org/wiki/Projective_geometry" target="_blank">projections</a>.
           Yet, there were two challenges.        
           The first challenge was to find an information-preserving, unambiguous mapping capable of representing an infinite number of cells in a finite space.
-          I found the concept of a supretask to be a suitable     
+          I found the concept of a supertask to be a suitable     
           <a href="https://en.wikipedia.org/wiki/Data_compression" target="_blank"> compression scheme</a>.
           The second challenge was to find an appealing geometry for the cells.
-          I found the pappus chain to be a suitable geometry.  I came up with the idea to curl up infinity onto a circle and reduce the state and color complexity of the cellular automaton to an absolute minimum viz a
-          <a href="http://mathworld.wolfram.com/CellularAutomaton.html" target="_blank">1-color, 1-dimensional cellular automaton</a>.
-          The result of this minimalism is a language that consists only of a single symbol—one circle—and its
-          <a href="https://en.wikipedia.org/wiki/Projective_geometry" target="_blank">projections</a>.
-          Yet, there were two challenges.        
-          The first challenge was to find an information-preserving, unambiguous mapping capable of representing an infinite number of cells in a finite space.
-          I found the concept of a supretask to be a suitable     
-          <a href="https://en.wikipedia.org/wiki/Data_compression" target="_blank"> compression scheme</a>.
-          The second challenge was to find an appealing geometry for the cells.
-          I found the pappus chain to be a suitable geometry.</p>
+          I found the pappus chain to be a suitable geometry.
         </p>
 
         <p>
