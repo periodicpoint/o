@@ -1,0 +1,39 @@
+@font-face {
+    font-family: 'robotoregular';
+    src: url('Roboto-Regular-webfont.eot');
+    src: url('Roboto-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('Roboto-Regular-webfont.woff2') format('woff2'),
+         url('Roboto-Regular-webfont.woff') format('woff'),
+         url('Roboto-Regular-webfont.ttf') format('truetype'),
+         url('Roboto-Regular-webfont.svg#robotoregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  line-height: 1.5em;
+}
+
+div {
+  text-align: justify;
+  -webkit-hyphens: auto;
+  -ms-hyphens: auto;
+  hyphens: auto;
+}
+
+h1 {
+  font-size: 20px;
+  font-weight: normal;
+}
+
+input, select, textarea, label, button {
+  font-family : inherit;
+  font-size: 12px;
+}
+
+.formValue {
+  font-family : inherit;
+  font-size: 10px;
+}

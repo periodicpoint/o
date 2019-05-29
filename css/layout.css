@@ -1,0 +1,51 @@
+.grid {
+  display: grid;
+  place-content: center;
+  grid-template-columns: 0.4fr minmax(10ch, 50ch) 0.1fr 0.4fr 0.1fr auto;
+  grid-template-rows: minmax(min-content, 0.5vh) 0.5fr auto;
+  grid-gap: 10px;
+  grid-template-areas:
+    ". head . panel ."
+    ". body . .     .";
+}
+
+.o {
+  grid-area: head;
+  place-self: center;
+}
+
+.form {
+  display: grid;
+  place-content: center;
+  grid-template-columns: [labels] 1fr [controls] 2fr;
+  /*grid-template-rows: minmax(min-content, 1fr);*/
+  grid-gap: 5px;
+  grid-area: panel;
+}
+
+.form label {
+  grid-column: labels;
+  grid-row: auto;
+}
+
+.form input {
+  grid-column: controls;
+  grid-row: auto;
+}
+
+.form textarea {
+  grid-column: controls;
+  grid-row: auto;
+  height: 5em;
+}
+
+.form p {
+  grid-column: controls;
+  grid-row: auto;
+  place-self: center;
+}
+
+.text {
+  grid-area: body;
+  place-self: center;
+}
